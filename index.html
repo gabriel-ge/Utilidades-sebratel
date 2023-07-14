@@ -2,25 +2,24 @@
 <html>
 
 <head>
-    <title>Exemplo de Entrada de Dados</title>
+    <title>Gerador de PPPoE</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
 <body>
+    <main class="pagina">
 
-    <div class="antes">
-        <h1>GERADOR DE PPPOE</h1>
+        <div class="coluna1">
 
-        <div class="entrada">
+            <h1 class="tituloColuna1">GERADOR DE PPPOE</h1>
 
-            <div class="nome">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome">
+            <div class="nome_campo">
+                <label class="escrita_nome_campo" for="nome">Nome:</label>
+                <input class="escrita_nome_campo_resultado" type="text" id="nome">
             </div>
-            <br>
 
-            <div class="sufixo">
+            <div class="nome_campo">
                 <label for="sufixo">Sufixo:</label>
                 <select id="sufixo">
                     <option value="">Nenhum</option>
@@ -36,20 +35,45 @@
                     <option value="_10">_10</option>
                 </select>
             </div>
+            <button onclick="exibirDados()">Enviar</button>
+
+            <div class="resultado">
+                <div class="nome_campo">
+                    <label for="resultado">Resultado:</label>
+
+                    <input type="text" id="resultado" disabled>
+
+                    <button onclick="copiarResultado()">Copiar</button>
+                </div>
+            </div>
 
         </div>
 
-        <br>
+        <div class="coluna2">
 
-        <button onclick="exibirDados() ">Enviar</button>
+            <h1 class="tituloColuna1">GERADOR DE RELATO</h1>
 
-        <br>
+            <div class="nome_campo">
 
-        <label for="resultado">Resultado:</label>
-        <input type="text" id="resultado" disabled>
-        <button onclick="copiarResultado()">Copiar</button>
+                <label for="programa">Programa:</label>
+                <select id="programa">
+                    <option value="UNM">UNM</option>
+                    <option value="NETNUMEN">NETNUMEN</option>
+                </select>
+            </div>
+
+            <div class="nome_campo">
+                <label for="relato">Relato:</label>
+                <input type="text" id="relato" disabled>
+            </div>
+
+            <button onclick="copiarRelato()">copiar</button>
+        </div>
 
 
+
+
+    </main>
 </body>
 
 </html>
