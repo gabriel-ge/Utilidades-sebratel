@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo de Entrada de Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="antes">
+        <h1>GERADOR DE PPPOE</h1>
+
+        <div class="entrada">
+
+            <div class="nome">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            <br>
+
+            <div class="sufixo">
+                <label for="sufixo">Sufixo:</label>
+                <select id="sufixo">
+                    <option value="">Nenhum</option>
+                    <option value="_1">_1</option>
+                    <option value="_2">_2</option>
+                    <option value="_3">_3</option>
+                    <option value="_4">_4</option>
+                    <option value="_5">_5</option>
+                    <option value="_6">_6</option>
+                    <option value="_7">_7</option>
+                    <option value="_8">_8</option>
+                    <option value="_9">_9</option>
+                    <option value="_10">_10</option>
+                </select>
+            </div>
+
+        </div>
+
+        <br>
+
+        <button onclick="exibirDados() ">Enviar</button>
+
+        <br>
+
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" disabled>
+        <button onclick="copiarResultado()">Copiar</button>
+
+
+</body>
+
+</html>
