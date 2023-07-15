@@ -1,79 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <title>Gerador de PPPoE</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilidades - Sebratel</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <main class="pagina">
+    <header class="header">
+        <h1 class="header-title">UTILIDADES</h1>
+        <img class="header-img" src="./assets/logo.png" alt="Logo da empresa SEBRATEL Tecnologia LTDA">
+    </header>
 
-        <div class="coluna1">
+    <main class="page">
+        <div class="page-grid">
+            <div class="page-grid-top">
+                <div class="page-links">
+                    <a class="page-links-text" href="./pppoe.html">GERADOR <br> DE PPPOE</a>
+                </div>
 
-            <h1 class="tituloColuna1">GERADOR DE PPPOE</h1>
-
-            <div class="nome_campo">
-                <label class="escrita_nome_campo" for="nome">Nome:</label>
-                <input class="escrita_nome_campo_resultado" type="text" id="nome">
-            </div>
-
-            <div class="nome_campo">
-                <label for="sufixo">Sufixo:</label>
-                <select id="sufixo">
-                    <option value="">Nenhum</option>
-                    <option value="_1">_1</option>
-                    <option value="_2">_2</option>
-                    <option value="_3">_3</option>
-                    <option value="_4">_4</option>
-                    <option value="_5">_5</option>
-                    <option value="_6">_6</option>
-                    <option value="_7">_7</option>
-                    <option value="_8">_8</option>
-                    <option value="_9">_9</option>
-                    <option value="_10">_10</option>
-                </select>
-            </div>
-            <button onclick="exibirDados()">Enviar</button>
-
-            <div class="resultado">
-                <div class="nome_campo">
-                    <label for="resultado">Resultado:</label>
-
-                    <input type="text" id="resultado" disabled>
-
-                    <button onclick="copiarResultado()">Copiar</button>
+                <div class="page-links">
+                    <a class="page-links-text" href="">GERADOR DE <br> ATENDIMENTO MATRIX</a>
                 </div>
             </div>
+            <div class="page-grid-top">
+                <div class="page-links">
+                    <a class="page-links-text" href="">MASSIVA <br> MATRIX</a>
+                </div>
 
-        </div>
-
-        <div class="coluna2">
-
-            <h1 class="tituloColuna1">GERADOR DE RELATO</h1>
-
-            <div class="nome_campo">
-
-                <label for="programa">Programa:</label>
-                <select id="programa">
-                    <option value="UNM">UNM</option>
-                    <option value="NETNUMEN">NETNUMEN</option>
-                </select>
+                <div class="page-links">
+                    <a class="page-links-text" href="">-<br>-<br>-<br></a>
+                </div>
             </div>
-
-            <div class="nome_campo">
-                <label for="relato">Relato:</label>
-                <input type="text" id="relato" disabled>
-            </div>
-
-            <button onclick="copiarRelato()">copiar</button>
         </div>
-
-
-
-
     </main>
+
+    <footer class="footer">
+        <p class="footer-">Desenvolvido por Gabriel Ramos - NOC</p>
+    </footer>
 </body>
 
 </html>

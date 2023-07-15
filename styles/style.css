@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Ubuntu:wght@300;700&display=swap');
+
+:root {
+    --cor-primaria: #111111;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-adicional: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    justify-content: center;
+
+    color: var(--cor-secundaria);
+}
+
+.header {
+    padding: 1%;
+    text-align: center;
+
+    background-color: var(--cor-primaria);
+
+    font-family: 'Krona One', sans-serif;
+    font-size: 10px;
+}
+
+.header-title {
+    padding: 5px;
+}
+
+.header-img {
+    width: 100px;
+    padding: 10px 0px 0px 0px;
+}
+
+.page-grid {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.page-grid-top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3%;
+}
+
+.page-links {
+    display: flex;
+    margin: 50px;
+    width: 300px;
+    height: 150px;
+
+    border-radius: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-primaria);
+}
+
+
+.page-links:hover {
+    display: flex;
+    margin: 50px;
+    width: 300px;
+    height: 150px;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-adicional);
+}
+
+.page-links:active {
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(1px);
+}
+
+.page-links-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+
+    text-decoration: none;
+
+    color: var(--cor-secundaria);
+}

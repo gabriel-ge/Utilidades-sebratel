@@ -46,3 +46,5 @@ function copiarRelato() {
   relato.setSelectionRange(0, relato.value.length);
   navigator.clipboard.writeText(relato.value)
 }
+
+let button = document.getElementById("button");

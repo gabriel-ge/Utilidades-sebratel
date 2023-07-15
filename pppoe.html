@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilidades - Sebratel</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>UTILIDADES</h1>
+        <img src="./assets/logo.png" alt="Logo da empresa SEBRATEL Tecnologia LTDA">
+    </header>
+
+    <main>
+        <div>
+            <div>
+                <h1>GERADOR DE PPPOE</h1>
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                </div>
+
+                <div>
+                    <label for="sufix">Sufixo:</label>
+                    <select id="sufix">
+                        <option value="">Nenhum</option>
+                        <option value="_1">_1</option>
+                        <option value="_2">_2</option>
+                        <option value="_3">_3</option>
+                        <option value="_4">_4</option>
+                        <option value="_5">_5</option>
+                        <option value="_6">_6</option>
+                        <option value="_7">_7</option>
+                        <option value="_8">_8</option>
+                        <option value="_9">_9</option>
+                        <option value="_10">_10</option>
+                    </select>
+                </div>
+
+                <button onclick="exibirDados()">Enviar</button>
+
+                <div>
+                    <label for="resultado">Resultado:</label>
+
+                    <input type="text" id="resultado" disabled>
+
+                    <button onclick="copiarResultado()">Copiar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-grid-right">
+
+            <h1 class="right-title-text">GERADOR DE RELATO</h1>
+
+
+            <div class="right-text">
+
+                <label for="program">Programa:</label>
+
+                <select id="program">
+                    <option value="UNM">UNM</option>
+                    <option value="NETNUMEN">NETNUMEN</option>
+                </select>
+            </div>
+
+
+            <label for="relact">Relato:</label>
+            <input type="text" id="relato" disabled>
+
+
+            <button onclick="copiarRelato()">copiar</button>
+        </div>
+
+    </main>
