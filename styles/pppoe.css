@@ -38,7 +38,60 @@ body {
     padding: 10px 0px 0px 0px;
 }
 
-.page{
+.page {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10%;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.page-title-pppoe {
+    color: var(--cor-primaria);
+    font-size: 15px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.page-imput {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--cor-adicional);
+
+    padding: 10px;
+}
+
+.page-sufix {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--cor-adicional);
+
+    padding: 10px;
+}
+
+.page-result {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--cor-adicional);
+
+    padding: 10px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--cor-adicional);
+
+
 }
