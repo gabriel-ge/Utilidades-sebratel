@@ -62,12 +62,15 @@ function gerarRelato() {
 
   relato.value = nomeAtendente + regiao + prazo + quantidadeAfetados;
 
-  relato.value = "Ola, me chamo " + nomeAtendente + "Sou do time do Suporte Técnico da SEBRATEL. Informamos que estamos passando por um evento massivo na região de: " + regiao + ". Nossos técnicos estão trabalhando para finalizar o evento mais rápido possível, visando isso estamos com prazo para as: " + prazo + " horas. Estamos com um total de: " + quantidadeAfetados + " clientes afetados. A SEBRATEL agradece a compreensão!"
+  relato.value = "Olá, me chamo " + nomeAtendente + ". Sou do time do Suporte Técnico da SEBRATEL. Informamos que estamos passando por um evento massivo na região de " + regiao + " que está afetando um total de " + quantidadeAfetados + ". Nossos técnicos estão trabalhando para finalizar o evento mais rápido possível. Visando isso estamos com prazo para as " + prazo + " horas. A SEBRATEL agradece a compreensão!"
 }
 
 function copiarResultado() {
-  var mensagem = document.getElementById("mensagem");
-  mensagem.select();
-  mensagem.setSelectionRange(0, mensagem.value.length);
-  navigator.clipboard.writeText(mensagem.value)
+  var relato = document.getElementById("mensagem").value;
+  var textarea = document.createElement("textarea");
+  textarea.value = relato;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textarea);
 }

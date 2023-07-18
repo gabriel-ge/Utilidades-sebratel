@@ -131,17 +131,18 @@ body {
 }
 
 .input-1 {
+    display: inline-block;
+    text-align: left;
+
     width: 250px;
     height: 250px;
-
-    text-align: center;
 
     border: 2px solid;
     border-radius: 5px;
 
     font-family: 'Raleway', sans-serif;
     color: var(--cor-primaria);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .enviar {
