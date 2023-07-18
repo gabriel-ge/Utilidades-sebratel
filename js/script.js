@@ -34,7 +34,7 @@ function exibirDados() {
   var ultimoNome = nomes[nomes.length - 1].toLowerCase();
 
   resultado.value = primeiroNome + ultimoNome + sufixoSelecionado;
-  relato.value = "Alterado PPPoE para: " + resultado.value + "Alterado também no: " + programa;
+  relato.value = "Alterado PPPoE para: " + resultado.value + " Efetuado alteração também no " + programa;
 }
 
 function copiarResultado() {

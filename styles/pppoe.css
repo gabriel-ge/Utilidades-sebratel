@@ -96,8 +96,8 @@ body {
 
     align-items: center;
     padding: 20px;
-    border: 1px #111111 solid;
-    border-radius: 20px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 25px;
 
 }
 
@@ -120,7 +120,7 @@ body {
     width: 250px;
     height: 25px;
 
-    border: 2px solid;
+    border: 1px solid rgb(201, 201, 201);
     border-radius: 5px;
 
     font-family: 'Raleway', sans-serif;
