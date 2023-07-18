@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Ubuntu:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Raleway&family=Ubuntu:wght@300;700&display=swap');
 
 :root {
     --cor-primaria: #111111;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #22D4FD;
     --cor-adicional: #1a1a1a;
+    --cor-linhas: #787878;
 }
 
 * {
@@ -20,6 +21,12 @@ body {
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
     padding: 1%;
     text-align: center;
 
@@ -27,6 +34,38 @@ body {
 
     font-family: 'Krona One', sans-serif;
     font-size: 10px;
+}
+
+.header-botao {
+    text-decoration: none;
+
+    padding: 5px;
+
+    margin: 20px;
+    font-size: 15px;
+
+    border-radius: 5px;
+
+    color: var(--cor-adicional);
+    background-color: var(--cor-secundaria);
+}
+
+.header-botao:hover {
+    text-decoration: none;
+
+    padding: 5px;
+
+    margin: 20px;
+    font-size: 15px;
+
+    border-radius: 5px;
+
+    color: var(--cor-adicional);
+    background-color: rgb(228, 228, 228);
+}
+
+.header-logo {
+    margin: 20px;
 }
 
 .header-title {
@@ -38,60 +77,71 @@ body {
     padding: 10px 0px 0px 0px;
 }
 
+
 .page {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    box-sizing: border-box;
+
+    height: 500px;
+
+
+    padding: 5%;
+}
+
+.page-coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     align-items: center;
 
-    padding: 10%;
 }
 
-.page-content {
+.page-coluna-titulo {
+    color: var(--cor-primaria);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.page-divisao {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 
+    font-family: 'Raleway', sans-serif;
+    color: var(--cor-primaria);
 }
 
-.page-title-pppoe {
+.input {
+    width: 250px;
+    height: 25px;
+
+    border: 2px solid;
+    border-radius: 5px;
+
+    font-family: 'Raleway', sans-serif;
     color: var(--cor-primaria);
     font-size: 15px;
+}
+
+.enviar {
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar-botao {
+    width: 50px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.footer {
+    padding: 1%;
+    text-align: center;
+
+    background-color: var(--cor-primaria);
+
     font-family: 'Krona One', sans-serif;
-}
-
-.page-imput {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
-    color: var(--cor-adicional);
-
-    padding: 10px;
-}
-
-.page-sufix {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
-    color: var(--cor-adicional);
-
-    padding: 10px;
-}
-
-.page-result {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
-    color: var(--cor-adicional);
-
-    padding: 10px;
-}
-
-.button {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
-    color: var(--cor-adicional);
-
-
+    font-size: 10px;
 }

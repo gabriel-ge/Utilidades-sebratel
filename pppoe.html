@@ -12,24 +12,34 @@
 
 <body>
     <header class="header">
-        <h1 class="header-title">UTILIDADES</h1>
-        <img class="header-img" src="./assets/logo.png" alt="Logo da empresa SEBRATEL Tecnologia LTDA">
+        <div class="header-navigation">
+            <a class="header-botao" href="index.html">HOME</a>
+        </div>
+
+        <div class="header-info">
+            <h1 class="header-title">UTILIDADES</h1>
+        </div>
+
+        <div class="header-logo">
+            <img class="header-img" src="./assets/logo.png" alt="Logo da empresa SEBRATEL Tecnologia LTDA">
+        </div>
+
     </header>
 
     <main class="page">
-        <div class="page-content">
-            <div class="page-title-pppoe">
+        <div class="page-coluna">
+            <div class="page-coluna-titulo">
                 <h1>GERADOR DE PPPOE</h1>
             </div>
 
-            <div class="page-imput">
+            <div class="page-divisao">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome">
+                <input class="input" type="text" id="nome">
             </div>
 
-            <div class="page-sufix">
-                <label for="sufix">Sufixo:</label>
-                <select id="sufix">
+            <div class="page-divisao">
+                <label for="sufixo">Sufixo:</label>
+                <select class="input" id="sufixo">
                     <option value="">Nenhum</option>
                     <option value="_1">_1</option>
                     <option value="_2">_2</option>
@@ -44,39 +54,41 @@
                 </select>
             </div>
 
-            <div class="page-result">
-                <div class="page-result-result">
-                    <button onclick="exibirDados()">Enviar</button>
-                    <label for="resultado">Resultado:</label>
-                </div>
-
-                <div class="button">
-                    <input type="text" id="resultado" disabled>
-                    <button onclick="copiarResultado()">Copiar</button>
-                </div>
+            <div class="enviar">
+                <button class="enviar-botao" onclick="exibirDados()">Enviar</button>
             </div>
+
+            <div class="page-divisao">
+                <label for="resultado">Resultado:</label>
+                <input class="input" type="text" id="resultado" disabled>
+            </div>
+
+            <button class="enviar-botao" onclick="copiarResultado()">Copiar</button>
         </div>
 
-        <div class="page-content">
-            <div class="page-title-relato">
+        <div class="page-coluna">
+            <div class="page-coluna-titulo">
                 <h1 class="right-title-text">GERADOR DE RELATO</h1>
             </div>
 
-            <div class="page-imput">
-                <label for="program">Programa:</label>
-
-                <select id="program">
+            <div class="page-divisao">
+                <label for="programa">Programa:</label>
+                <select class="input" id="programa">
                     <option value="UNM">UNM</option>
                     <option value="NETNUMEN">NETNUMEN</option>
                 </select>
             </div>
 
-            <div class="page-result">
-                <label for="relact">Relato:</label>
-                <input type="text" id="relato" disabled>
-                <button onclick="copiarRelato()">copiar</button>
+            <div class="page-divisao">
+                <label class="label" for="relato">Relato:</label>
+                <input class="input" type="text" id="relato" disabled>
             </div>
+
+            <button class="enviar-botao" onclick="copiarRelato()">copiar</button>
+
         </div>
+        </div>
+
     </main>
 
     <footer class="footer">

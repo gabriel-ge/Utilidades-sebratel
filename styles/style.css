@@ -5,6 +5,7 @@
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #22D4FD;
     --cor-adicional: #1a1a1a;
+    --cor-linhas: #787878;
 }
 
 * {
@@ -20,6 +21,12 @@ body {
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
     padding: 1%;
     text-align: center;
 
@@ -27,6 +34,38 @@ body {
 
     font-family: 'Krona One', sans-serif;
     font-size: 10px;
+}
+
+.header-botao {
+    text-decoration: none;
+
+    padding: 5px;
+
+    margin: 20px;
+    font-size: 15px;
+
+    border-radius: 5px;
+
+    color: var(--cor-adicional);
+    background-color: var(--cor-secundaria);
+}
+
+.header-botao:hover {
+    text-decoration: none;
+
+    padding: 5px;
+
+    margin: 20px;
+    font-size: 15px;
+
+    border-radius: 5px;
+
+    color: var(--cor-adicional);
+    background-color: rgb(228, 228, 228);
+}
+
+.header-logo {
+    margin: 20px;
 }
 
 .header-title {
@@ -54,8 +93,8 @@ body {
 .page-links {
     display: flex;
     margin: 50px;
-    width: 300px;
-    height: 150px;
+    width: 280px;
+    height: 125px;
 
     border-radius: 10px;
 
@@ -69,8 +108,8 @@ body {
 .page-links:hover {
     display: flex;
     margin: 50px;
-    width: 300px;
-    height: 150px;
+    width: 280px;
+    height: 125px;
 
     align-items: center;
     justify-content: center;
@@ -91,4 +130,14 @@ body {
     text-decoration: none;
 
     color: var(--cor-secundaria);
+}
+
+.footer {
+    padding: 1%;
+    text-align: center;
+
+    background-color: var(--cor-primaria);
+
+    font-family: 'Krona One', sans-serif;
+    font-size: 10px;
 }
