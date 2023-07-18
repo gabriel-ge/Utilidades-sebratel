@@ -30,7 +30,8 @@ body {
     padding: 0.5%;
     text-align: center;
 
-    background-color: var(--cor-primaria);
+    background: rgb(236, 32, 32);
+    background: linear-gradient(90deg, rgba(236, 32, 32, 1) 0%, rgba(218, 115, 0, 1) 51%, rgba(255, 237, 0, 1) 100%);
 
     font-family: 'Krona One', sans-serif;
     font-size: 10px;
@@ -162,7 +163,8 @@ body {
     padding: 1%;
     text-align: center;
 
-    background-color: var(--cor-primaria);
+    background: rgb(236, 32, 32);
+    background: linear-gradient(90deg, rgba(236, 32, 32, 1) 0%, rgba(218, 115, 0, 1) 51%, rgba(255, 237, 0, 1) 100%);
 
     font-family: 'Krona One', sans-serif;
     font-size: 10px;
