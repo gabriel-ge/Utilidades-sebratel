@@ -54,6 +54,7 @@ function copiarRelato() {
 let button = document.getElementById("button");
 
 function gerarRelato() {
+  var geral = document.getElementById("geral").value
   var nomeAtendente = document.getElementById("atendente").value;
   var regiao = document.getElementById("regiao").value;
   var prazo = document.getElementById("prazo").value;
@@ -62,7 +63,11 @@ function gerarRelato() {
 
   relato.value = nomeAtendente + regiao + prazo + quantidadeAfetados;
 
-  relato.value = "Olá, me chamo " + nomeAtendente + ". Sou do time do Suporte Técnico da SEBRATEL. Informamos que estamos passando por um evento massivo na região de " + regiao + " que está afetando um total de " + quantidadeAfetados + ". Nossos técnicos estão trabalhando para finalizar o evento mais rápido possível. Visando isso estamos com prazo para as " + prazo + " horas. A SEBRATEL agradece a compreensão!"
+  if (geral === "NÃO") {
+    relato.value = "Olá, me chamo " + nomeAtendente + ". Sou do time do Suporte Técnico da SEBRATEL. Informamos que estamos passando por um evento massivo na região de " + regiao + " que está afetando um total de " + quantidadeAfetados + ". Nossos técnicos estão trabalhando para finalizar o evento mais rápido possível. Visando isso estamos com prazo para as " + prazo + " horas. A SEBRATEL agradece a compreensão!"
+  } else {
+    relato.value = "Olá, me chamo " + nomeAtendente + ". Sou do time do Suporte Técnico da SEBRATEL. Informamos que estamos passando por um evento massivo que está afetando toda a nossa rede. Estamos com prazo para as  " + prazo + " e estamos atuando para restabelecermos as coxões o mais rápido possível. A SEBRATEL agradece a compreensão!"
+  }
 }
 
 function copiarResultado() {
