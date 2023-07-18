@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    padding: 1%;
+    padding: 0.5%;
     text-align: center;
 
     background-color: var(--cor-primaria);
@@ -95,6 +95,9 @@ body {
     justify-content: space-between;
 
     align-items: center;
+    padding: 20px;
+    border: 1px #111111 solid;
+    border-radius: 20px;
 
 }
 
@@ -131,9 +134,12 @@ body {
 }
 
 .enviar-botao {
-    width: 50px;
+    width: 80px;
     height: 30px;
     font-size: 15px;
+
+    background-color: #1c1c1c;
+    color: aliceblue;
 }
 
 .footer {

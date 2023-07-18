@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massiva - Matrix</title>
+    <link rel="stylesheet" href="./styles/matrix.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-navigation">
+            <a class="header-botao" href="index.html">HOME</a>
+        </div>
+
+        <div class="header-info">
+            <h1 class="header-title">UTILIDADES</h1>
+        </div>
+
+        <div class="header-logo">
+            <img class="header-img" src="./assets/logo.png" alt="Logo da empresa SEBRATEL Tecnologia LTDA">
+        </div>
+
+    </header>
+
+    <main class="page">
+        <div class="page-coluna">
+            <div class="page-coluna-titulo">
+                <h1>GERADOR DE MENSAGENS</h1>
+            </div>
+
+            <div class="page-divisao">
+                <label for="atendente">Atendente:</label>
+                <input class="input" type="text" id="atendente">
+            </div>
+
+            <div class="page-divisao">
+                <label for="regiao">Região:</label>
+                <input class="input" type="text" id="regiao">
+            </div>
+
+            <div class="page-divisao">
+                <label for="prazo">Prazo:</label>
+                <input class="input" type="text" id="prazo">
+            </div>
+
+            <div class="page-divisao">
+                <label for="quantidade">Clientes Afetados:</label>
+                <input class="input" type="text" id="quantidade">
+            </div>
+
+            <div class="enviar">
+                <button class="enviar-botao" onclick="gerarRelato()">Enviar</button>
+            </div>
+        </div>
+
+        <div class="page-coluna">
+            <div class="page-divisao">
+                <label class="label" for="mensagem">Relato:</label>
+                <input class="input-1" type="text" id="mensagem" disabled>
+            </div>
+
+            <button class="enviar-botao" onclick="copiarResultado()">COPIAR</button>
+        </div>
+
+    </main>
+</body>
+
+</html>

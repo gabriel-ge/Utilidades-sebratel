@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Ubuntu:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Raleway&family=Ubuntu:wght@300;700&display=swap');
 
 :root {
     --cor-primaria: #111111;
@@ -77,59 +77,85 @@ body {
     padding: 10px 0px 0px 0px;
 }
 
-.page-grid {
+
+.page {
     display: flex;
-    justify-content: center;
-    padding: 1%;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+
+
+    height: 500px;
+
+
+    padding: 5%;
 }
 
-.page-grid-top {
+.page-coluna {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 3%;
-}
-
-.page-links {
-    display: flex;
-    margin: 50px;
-    width: 280px;
-    height: 125px;
-
-    border-radius: 10px;
+    justify-content: space-between;
 
     align-items: center;
-    justify-content: center;
+    padding: 20px;
+    border: 1px #111111 solid;
+    border-radius: 20px;
 
-    background-color: var(--cor-primaria);
 }
 
-
-.page-links:hover {
-    display: flex;
-    margin: 50px;
-    width: 280px;
-    height: 125px;
-
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--cor-adicional);
-}
-
-.page-links:active {
-    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-    transform: translateY(1px);
-}
-
-.page-links-text {
+.page-coluna-titulo {
+    color: var(--cor-primaria);
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    padding: 10px;
+}
 
-    text-decoration: none;
+.page-divisao {
+    display: flex;
+    flex-direction: column;
 
-    color: var(--cor-secundaria);
+    font-family: 'Raleway', sans-serif;
+    color: var(--cor-primaria);
+}
+
+.input {
+    width: 250px;
+    height: 25px;
+
+    border: 2px solid;
+    border-radius: 5px;
+
+    font-family: 'Raleway', sans-serif;
+    color: var(--cor-primaria);
+    font-size: 15px;
+}
+
+.input-1 {
+    width: 250px;
+    height: 250px;
+
+    text-align: center;
+
+    border: 2px solid;
+    border-radius: 5px;
+
+    font-family: 'Raleway', sans-serif;
+    color: var(--cor-primaria);
+    font-size: 15px;
+}
+
+.enviar {
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar-botao {
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+
+    background-color: #1c1c1c;
+    color: aliceblue;
 }
 
 .footer {
