@@ -22,13 +22,15 @@ document.getElementById("copiarMensagemBtn").addEventListener("click", function 
   copiarMensagem();
 });
 
+
+
 function exibirDados() {
   var nomeCompleto = document.getElementById("nome").value;
   var sufixoSelecionado = document.getElementById("sufixo").value;
-  var resultado = document.getElementById("resultado");
+
   var relato = document.getElementById("relato");
   var programa = document.getElementById("programa").value;
-
+  var resultado = document.getElementById("resultado");
   var nomes = nomeCompleto.split(" ");
   var primeiroNome = nomes[0].toLowerCase();
   var ultimoNome = nomes[nomes.length - 1].toLowerCase();
@@ -70,7 +72,7 @@ function gerarRelato() {
   }
 }
 
-function copiarResultado() {
+function copiarResultadoMatrix() {
   var relato = document.getElementById("mensagem").value;
   var textarea = document.createElement("textarea");
   textarea.value = relato;
