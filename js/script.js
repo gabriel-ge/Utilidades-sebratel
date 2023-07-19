@@ -15,16 +15,18 @@ document.getElementById("copiarBtn").addEventListener("click", function () {
 });
 
 document.getElementById("copiarRelatoBtn").addEventListener("click", function () {
-  copiarRelato();
+  copiarRelatoTrocaDeTitularidade();
 });
 
 document.getElementById("copiarMensagemBtn").addEventListener("click", function () {
   copiarMensagem();
 });
 
+function gerarPPPOE() {
+  function removeCaracteresEspeciais(texto) {
+    return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\w\s]/gi, "");
+  }
 
-
-function exibirDados() {
   var nomeCompleto = document.getElementById("nome").value;
   var sufixoSelecionado = document.getElementById("sufixo").value;
 
@@ -35,18 +37,20 @@ function exibirDados() {
   var primeiroNome = nomes[0].toLowerCase();
   var ultimoNome = nomes[nomes.length - 1].toLowerCase();
 
-  resultado.value = primeiroNome + ultimoNome + sufixoSelecionado;
-  relato.value = "Alterado PPPoE para: " + resultado.value + " Efetuado alteração também no " + programa;
+  resultado.value = removeCaracteresEspeciais(primeiroNome + ultimoNome + sufixoSelecionado);
+  relato.value = "Alterado PPPoE para: " + resultado.value + ". Efetuado alteração também no " + programa;
 }
 
-function copiarResultado() {
+
+
+function copiarPPPOE() {
   var resultado = document.getElementById("resultado");
   resultado.select();
   resultado.setSelectionRange(0, resultado.value.length);
   navigator.clipboard.writeText(resultado.value)
 }
 
-function copiarRelato() {
+function copiarRelatoTrocaDeTitularidade() {
   var relato = document.getElementById("relato");
   relato.select();
   relato.setSelectionRange(0, relato.value.length);
@@ -55,7 +59,7 @@ function copiarRelato() {
 
 let button = document.getElementById("button");
 
-function gerarRelato() {
+function gerarRelatoMassivaMatrix() {
   var geral = document.getElementById("geral").value
   var nomeAtendente = document.getElementById("atendente").value;
   var regiao = document.getElementById("regiao").value;

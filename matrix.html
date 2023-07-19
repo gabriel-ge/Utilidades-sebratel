@@ -34,10 +34,13 @@
 
             <div class="page-divisao">
                 <label for="geral">Geral:</label>
-                <select class="input" type="text" id="geral">
+                <select class="input" type="checkbox" id="geral">
                     <option value="SIM">SIM</option>
                     <option value="NÃO">NÃO</option>
                 </select>
+
+
+
             </div>
 
             <div class="page-divisao">
@@ -61,7 +64,7 @@
             </div>
 
             <div class="enviar">
-                <button class="enviar-botao" onclick="gerarRelato()">Enviar</button>
+                <button class="enviar-botao" onclick="gerarRelatoMassivaMatrix()">Enviar</button>
             </div>
         </div>
 
@@ -71,7 +74,7 @@
                 <output class="input-1" type="text" id="mensagem" disabled>
             </div>
 
-            <button class="enviar-botao" onclick="copiarResultado()">COPIAR</button>
+            <button class="enviar-botao" onclick="copiarResultadoMatrix()">COPIAR</button>
         </div>
 
     </main>

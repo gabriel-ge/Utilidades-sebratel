@@ -62,7 +62,7 @@
         border-radius: 5px;
 
         color: var(--cor-adicional);
-        background-color: rgb(228, 228, 228);
+        box-shadow: 3px 3px red, -1px -1px 1em rgb(255, 38, 38);
     }
 
     .header-logo {
@@ -115,7 +115,7 @@
         align-items: center;
         justify-content: center;
 
-        background-color: var(--cor-adicional);
+        box-shadow: 3px 3px red, -1px -1px 1em rgb(208, 208, 208);
     }
 
     .page-links:active {
