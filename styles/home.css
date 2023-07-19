@@ -1,0 +1,63 @@
+.page-grid {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.page-grid-top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3%;
+}
+
+.page-links {
+    display: flex;
+    margin: 50px;
+    width: 280px;
+    height: 125px;
+
+    border-radius: 10px;
+
+    border: 5px #be2121 outset;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d10b17;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+
+.page-links:hover,
+.page-links:active {
+    display: flex;
+    margin: 50px;
+    width: 280px;
+    height: 125px;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #b60410;
+
+    -webkit-transform: scale(5);
+    transform: scale(1.01);
+}
+
+.page-links-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+
+    text-decoration: none;
+
+    color: var(--cor-secundaria);
+}

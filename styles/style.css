@@ -1,145 +1,91 @@
-    @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Ubuntu:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Ubuntu:wght@300;700&display=swap');
 
-    :root {
-        --cor-primaria: #111111;
-        --cor-secundaria: #F6F6F6;
-        --cor-terciaria: #22D4FD;
-        --cor-adicional: #1a1a1a;
-        --cor-linhas: #787878;
-    }
+:root {
+    --cor-primaria: #111111;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-adicional: #1a1a1a;
+    --cor-linhas: #787878;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    body {
-        box-sizing: border-box;
-        justify-content: center;
-        color: var(--cor-secundaria);
-        margin: 0;
-        padding: 0;
-    }
+body {
+    box-sizing: border-box;
+    justify-content: center;
+    color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+}
 
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-        padding: 0.5%;
-        text-align: center;
+    padding: 0.5%;
+    text-align: center;
 
-        background: rgb(236, 32, 32);
-        background: linear-gradient(90deg, rgba(236, 32, 32, 1) 0%, rgba(218, 115, 0, 1) 51%, rgba(255, 237, 0, 1) 100%);
+    background: rgb(236, 32, 32);
+    background: linear-gradient(90deg, rgba(236, 32, 32, 1) 0%, rgba(218, 115, 0, 1) 51%, rgba(255, 237, 0, 1) 100%);
 
-        font-family: 'Krona One', sans-serif;
-        font-size: 10px;
-    }
+    font-family: 'Krona One', sans-serif;
+    font-size: 10px;
+}
 
-    .header-botao {
-        text-decoration: none;
+.header-botao {
+    text-decoration: none;
 
-        padding: 5px;
+    padding: 5px;
 
-        margin: 20px;
-        font-size: 15px;
+    margin: 20px;
+    font-size: 15px;
 
-        border-radius: 5px;
+    border-radius: 5px;
 
-        color: var(--cor-adicional);
-        background-color: var(--cor-secundaria);
-    }
-
-    .header-botao:hover {
-        text-decoration: none;
-
-        padding: 5px;
-
-        margin: 20px;
-        font-size: 15px;
-
-        border-radius: 5px;
-
-        color: var(--cor-adicional);
-        box-shadow: 3px 3px red, -1px -1px 1em rgb(255, 38, 38);
-    }
-
-    .header-logo {
-        margin: 20px;
-    }
-
-    .header-title {
-        padding: 5px;
-    }
-
-    .header-img {
-        width: 100px;
-        padding: 10px 0px 0px 0px;
-    }
-
-    .page-grid {
-        display: flex;
-        justify-content: center;
-        padding: 1%;
-    }
-
-    .page-grid-top {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 3%;
-    }
-
-    .page-links {
-        display: flex;
-        margin: 50px;
-        width: 280px;
-        height: 125px;
-
-        border-radius: 10px;
-
-        align-items: center;
-        justify-content: center;
-
-        background-color: #d10b17;
-    }
+    color: var(--cor-secundaria);
+    box-shadow: 2px 2px 6px #800101;
 
 
-    .page-links:hover {
-        display: flex;
-        margin: 50px;
-        width: 280px;
-        height: 125px;
+}
 
-        align-items: center;
-        justify-content: center;
+.header-botao:hover {
+    text-decoration: none;
 
-        box-shadow: 3px 3px red, -1px -1px 1em rgb(208, 208, 208);
-    }
+    padding: 5px;
 
-    .page-links:active {
-        box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-        transform: translateY(1px);
-    }
+    margin: 20px;
+    font-size: 15px;
 
-    .page-links-text {
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 700;
-        font-size: 30px;
+    box-shadow: 5px 5px 3px #800101;
+    -webkit-transition-duration: 0.1s;
 
-        text-decoration: none;
+}
 
-        color: var(--cor-secundaria);
-    }
+.header-logo {
+    margin: 20px;
+}
 
-    .footer {
-        padding: 1%;
-        text-align: center;
+.header-title {
+    padding: 5px;
+}
 
-        background: rgb(236, 32, 32);
-        background: linear-gradient(90deg, rgba(236, 32, 32, 1) 0%, rgba(218, 115, 0, 1) 51%, rgba(255, 237, 0, 1) 100%);
+.header-img {
+    width: 100px;
+    padding: 10px 0px 0px 0px;
+}
 
-        font-family: 'Krona One', sans-serif;
-        font-size: 10px;
-    }
+.footer {
+    padding: 1%;
+    text-align: center;
+
+    background: rgb(236, 32, 32);
+    background: linear-gradient(90deg, rgba(236, 32, 32, 1) 0%, rgba(218, 115, 0, 1) 51%, rgba(255, 237, 0, 1) 100%);
+
+    font-family: 'Krona One', sans-serif;
+    font-size: 10px;
+}
