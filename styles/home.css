@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     padding: 1%;
+
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(255, 255, 255) 52%, rgba(235, 235, 235, 1) 100%);
 }
 
 .page-grid-top {

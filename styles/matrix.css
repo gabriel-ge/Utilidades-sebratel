@@ -5,6 +5,9 @@
 
     height: 550px;
     padding: 5%;
+
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(255, 255, 255) 52%, rgba(235, 235, 235, 1) 100%);
 }
 
 .page-coluna {
@@ -45,6 +48,10 @@
     font-family: 'Raleway', sans-serif;
     color: var(--cor-primaria);
     font-size: 15px;
+
+    background-color: white;
+
+    box-shadow: #b2b2b2 1px 1px 3px;
 }
 
 .input-1 {
@@ -62,6 +69,10 @@
     font-family: 'Raleway', sans-serif;
     color: var(--cor-primaria);
     font-size: 16px;
+
+    background-color: white;
+
+    box-shadow: #b2b2b2 1px 1px 3px;
 }
 
 .enviar {
