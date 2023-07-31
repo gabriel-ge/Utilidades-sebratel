@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     padding: 12vh;
-
     background: rgb(255, 255, 255);
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(255, 255, 255) 52%, rgba(235, 235, 235, 1) 100%);
 }
@@ -20,22 +19,15 @@
     width: 45vh;
     height: 19vh;
     border-radius: 4vh;
-
     border: 1vh #be2121 outset;
-
     align-items: center;
     justify-content: center;
-
     background-color: #d10b17;
-
     -webkit-transform: perspective(1vh) translateZ(0);
     transform: perspective(1vh) translateZ(0);
-
     box-shadow: 0vh 0vh 5vh transparent;
     -webkit-transition-duration: 0.1s;
-
     transition-duration: 0.1s;
-
     -webkit-transition-property: transform;
     transition-property: transform;
 }
@@ -45,17 +37,12 @@
 .page-links:active {
     display: flex;
     height: 19vh;
-
     align-items: center;
     justify-content: center;
-
     background-color: #b60410;
-
     border-radius: 3vh;
-
     box-shadow: rgb(136, 136, 136) 0.5vh 0.5vh 2vh;
     -webkit-transition: 0.1s;
-
     -webkit-transform: scale(5);
     transform: scale(1.01);
 }
@@ -64,9 +51,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 3vh;
-
     text-decoration: none;
-
     color: var(--cor-secundaria);
 }
 
@@ -77,7 +62,6 @@
         justify-content: center;
         padding: 12vh;
         min-width: 77.2vh;
-
         background: rgb(255, 255, 255);
         background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(255, 255, 255) 52%, rgba(235, 235, 235, 1) 100%);
     }
@@ -95,22 +79,15 @@
         width: 45vh;
         height: 19vh;
         border-radius: 4vh;
-    
         border: 1vh #be2121 outset;
-    
         align-items: center;
         justify-content: center;
-    
         background-color: #d10b17;
-    
         -webkit-transform: perspective(1vh) translateZ(0);
         transform: perspective(1vh) translateZ(0);
-    
         box-shadow: 0vh 0vh 5vh transparent;
         -webkit-transition-duration: 0.1s;
-    
         transition-duration: 0.1s;
-    
         -webkit-transition-property: transform;
         transition-property: transform;
     }
@@ -119,17 +96,12 @@
     .page-links:active {
         display: flex;
         height: 19vh;
-    
         align-items: center;
         justify-content: center;
-    
         background-color: #b60410;
-    
         border-radius: 3vh;
-    
         box-shadow: rgb(136, 136, 136) 0.5vh 0.5vh 2vh;
         -webkit-transition: 0.1s;
-    
         -webkit-transform: scale(5);
         transform: scale(1.01);
     }
@@ -138,10 +110,7 @@
         font-family: 'Ubuntu', sans-serif;
         font-weight: 700;
         font-size: 3vh;
-    
         text-decoration: none;
-    
         color: var(--cor-secundaria);
     }
-
 }
