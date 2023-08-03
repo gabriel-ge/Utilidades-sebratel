@@ -33,7 +33,7 @@ function gerarPPPOE() {
   var relato = document.getElementById("relato");
   var programa = document.getElementById("programa").value;
   var resultado = document.getElementById("resultado");
-  var nomes = nomeCompleto.split(" ");
+  var nomes = nomeCompleto.trimLeft().trimRight().split(" ");
   var primeiroNome = nomes[0].toLowerCase();
   var ultimoNome = nomes[nomes.length - 1].toLowerCase();
 
@@ -72,7 +72,7 @@ function gerarRelatoMassivaMatrix() {
   if (geral === "NÃO") {
     relato.value = "Olá, me chamo " + nomeAtendente + ". Sou do time do Suporte Técnico da SEBRATEL. Informamos que estamos passando por um evento massivo na região de " + regiao + " que está afetando um total de " + quantidadeAfetados + " clientes. Nossos técnicos estão trabalhando para finalizar o evento mais rápido possível. Visando isso estamos com prazo para as " + prazo + " horas. A SEBRATEL agradece a compreensão!"
   } else {
-    relato.value = "Olá, me chamo " + nomeAtendente + ". Sou do time do Suporte Técnico da SEBRATEL. Informamos que estamos passando por um evento massivo que está afetando toda a nossa rede. Estamos com prazo para as  " + prazo + " e estamos atuando para restabelecermos as coxões o mais rápido possível. A SEBRATEL agradece a compreensão!"
+    relato.value = "Olá, me chamo " + nomeAtendente + ". Sou do time do Suporte Técnico da SEBRATEL. Informamos que estamos passando por um evento massivo que está afetando toda a nossa rede. Estamos com prazo para as  " + prazo + " e estamos atuando para restabelecermos as conexões o mais rápido possível. A SEBRATEL agradece a compreensão!"
   }
 }
 
@@ -85,3 +85,16 @@ function copiarResultadoMatrix() {
   document.execCommand("copy");
   document.body.removeChild(textarea);
 }
+
+function showTooltip() {
+  const tooltipBox = document.getElementById('tooltip-box');
+  tooltipBox.style.display = 'block';
+}
+
+function hideTooltip() {
+  const tooltipBox = document.getElementById('tooltip-box');
+  tooltipBox.style.display = 'none';
+}
+
+const tooltipIcon = document.querySelector('.tooltip-icon');
+tooltipIcon.addEventListener('mouseout', hideTooltip);

@@ -13,8 +13,8 @@
 
 <body>
 
-    
-        
+
+
     <header class="header">
         <div class="header-navigation">
             <a class="header-botao" href="index.html">HOME</a>
@@ -31,7 +31,7 @@
     </header>
 
     <main class="page">
-        
+
         <div class="page-coluna">
             <div class="page-coluna-titulo">
                 <h1>GERADOR DE PPPOE</h1>
@@ -39,24 +39,11 @@
 
             <div class="page-divisao">
                 <label for="nome">Nome:</label>
-                <input class="input" type="text" id="nome">
+                <input class="input" type="text" id="nome" placeholder="Nome do cliente">
             </div>
 
-            <div class="page-divisao">
-                <label for="sufixo">Sufixo:</label>
-                <select class="input" id="sufixo">
-                    <option value="">Nenhum</option>
-                    <option value="_1">_1</option>
-                    <option value="_2">_2</option>
-                    <option value="_3">_3</option>
-                    <option value="_4">_4</option>
-                    <option value="_5">_5</option>
-                    <option value="_6">_6</option>
-                    <option value="_7">_7</option>
-                    <option value="_8">_8</option>
-                    <option value="_9">_9</option>
-                    <option value="_10">_10</option>
-                </select>
+            <div class="page-divisao1">
+                <input class="input" id="sufixo" placeholder="Em caso de PPPoE já existente">Sufixo:</input>
             </div>
 
             <div class="enviar">
@@ -65,7 +52,7 @@
 
             <div class="page-divisao">
                 <label for="resultado">Resultado:</label>
-                <input class="input" type="text" id="resultado" disabled>
+                <input class="input" type="text" id="resultado" disabled placeholder="PPPoE">
             </div>
 
             <button class="enviar-botao" onclick="copiarPPPOE()">COPIAR</button>
@@ -79,6 +66,7 @@
             <div class="page-divisao">
                 <label for="programa">Programa:</label>
                 <select class="input" id="programa">
+                    <option disabled selected hidden>Escolha uma opção</option>
                     <option value="UNM">UNM</option>
                     <option value="NETNUMEN">NETNUMEN</option>
                 </select>
@@ -86,7 +74,7 @@
 
             <div class="page-divisao">
                 <label class="label" for="relato">Relato:</label>
-                <input class="input" type="text" id="relato" disabled>
+                <input class="input" type="text" id="relato" disabled placeholder="Relato para o protocolo">
             </div>
 
             <button class="enviar-botao" onclick="copiarRelatoTrocaDeTitularidade()">COPIAR</button>

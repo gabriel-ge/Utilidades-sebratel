@@ -35,12 +35,19 @@
 
             <div class="page-divisao">
                 <label for="geral">Geral:</label>
+                <div class="input-with-tooltip">
+                    <span class="tooltip-icon" onmouseover="showTooltip()" onmouseout="hideTooltip()">?</span>
+                    <div class="tooltip-box" id="tooltip-box">
+                        Deve ser selecionado SIM para casos de queda de DNS, virada de trafego para outra operadora,
+                        entre outros tipos de eventos que indisponibilizam nossa rede logica ou fisicamente.
+                    </div>
+                </div>
+
                 <select class="input" type="checkbox" id="geral">
+                    <option disabled selected hidden>Escolha uma opção</option>
                     <option value="SIM">SIM</option>
                     <option value="NÃO">NÃO</option>
                 </select>
-
-
 
             </div>
 

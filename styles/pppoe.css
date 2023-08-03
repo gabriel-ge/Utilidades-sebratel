@@ -29,7 +29,16 @@
     color: var(--cor-primaria);
 }
 
+.page-divisao1 {
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: 'Raleway', sans-serif;
+    color: var(--cor-primaria);
+}
+
 .input {
+    box-sizing: border-box;
+    padding-left: 1vh;
     width: 50vh;
     height: 5vh;
     border: 1px solid rgb(201, 201, 201);
@@ -62,7 +71,7 @@
         height: 85vh;
         padding: 10vh;
     }
-    
+
     .page-coluna {
         display: flex;
         flex-direction: column;
@@ -71,21 +80,21 @@
         padding: 5vh;
         font-size: 3vh;
     }
-    
+
     .page-coluna-titulo {
         color: var(--cor-primaria);
         font-family: 'Ubuntu', sans-serif;
         font-weight: 700;
         font-size: 2vh;
     }
-    
+
     .page-divisao {
         display: flex;
         flex-direction: column;
         font-family: 'Raleway', sans-serif;
         color: var(--cor-primaria);
     }
-    
+
     .input {
         width: 50vh;
         height: 5vh;
@@ -96,12 +105,12 @@
         color: var(--cor-primaria);
         font-size: 2vh;
     }
-    
+
     .enviar {
         display: flex;
         flex-direction: column;
     }
-    
+
     .enviar-botao {
         width: 12vh;
         height: 5vh;
