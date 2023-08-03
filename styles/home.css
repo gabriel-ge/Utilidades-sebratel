@@ -1,3 +1,5 @@
+
+
 .page-grid {
     display: flex;
     justify-content: center;
@@ -7,14 +9,15 @@
 }
 
 .page-grid-top {
-    display: grid;
-    gap: 15vh;
-    grid-template-columns: 50vh 60vh;
+    display: flex;
     text-align: center;
-    padding: 8vh;
+    padding: 20vh;
+    outline: none;
+    gap: 15vh;
 }
 
 .page-links {
+    box-sizing: border-box;
     display: flex;
     width: 45vh;
     height: 19vh;
@@ -23,13 +26,13 @@
     align-items: center;
     justify-content: center;
     background-color: #d10b17;
-    -webkit-transform: perspective(1vh) translateZ(0);
-    transform: perspective(1vh) translateZ(0);
-    box-shadow: 0vh 0vh 5vh transparent;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+    box-shadow: none;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 3vh;
+    text-decoration: none;
+    color: var(--cor-secundaria);
 }
 
 
@@ -48,11 +51,7 @@
 }
 
 .page-links-text {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 3vh;
-    text-decoration: none;
-    color: var(--cor-secundaria);
+
 }
 
 @media (max-width: 768px) {

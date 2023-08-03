@@ -98,3 +98,11 @@ function hideTooltip() {
 
 const tooltipIcon = document.querySelector('.tooltip-icon');
 tooltipIcon.addEventListener('mouseout', hideTooltip);
+
+function abrirTrocaTitularidade() {
+  window.location.replace('./pppoe.html');
+}
+
+function abrirMassivaMatrix() {
+  window.location.replace('./matrix.html');
+}

@@ -18,19 +18,15 @@ body {
     justify-content: center;
     color: var(--cor-secundaria);
     min-width: none;
-    max-width: 214vh;
     margin: 0;
     padding: 0;
 }
-
 .header {
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: space-evenly;
 
-    max-width: 214vh;
-    min-width: 100vh;
 
     padding: 0.1vh;
     text-align: center;
